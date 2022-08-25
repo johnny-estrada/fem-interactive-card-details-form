@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <title>Interactive Card Details Form</title>
+</head>
+
+<body>
+  <div class="container">
+      <!-- Left content -->
+    <div class="container__img-half">
+        <div class="bg-img">
+          <div class="back-img">
+            <span class="cvv-text">000</span>
+          </div>
+          <div class="front-img">
+            <div class="card-logo"></div>
+            <span class="primary-text">0000 0000 0000 0000</span>
+            <span class="secondary-name">Jane Appleseed</span>
+            <span class="secondary-numb">00/00</span>
+          </div>  
+        </div>  
+    </div>
+      <!-- Right content -->
+    <div class="container__form-half">
+      <form action="submit">
+        <label for="">CARDHOLDER NAME</label>
+        <input type="text" placeholder="e.g. Jane Appleseed">
+        
+        <label for="">CARD NUMBER</label>
+        <input type="number" placeholder="e.g. 1234 5678 9123 0000">
+        
+
+        <div class="bottom-text">
+          <label for="">EXP. DATE (MM/YY)</label>
+          <label for="">CVC</label>
+
+          <div class="label">
+            <input class="sm-input" type="number" placeholder="MM">
+            <input class="sm-input"  type="number" placeholder="YY">
+            <input class="med-input" type="number" placeholder="e.g. 123">
+          </div>
+        </div>
+        
+        <button>Confirm</button>
+      </form>
+    </div>
+        <!-- Completed state start -->
+      
+        <!-- Thank you!
+        We've added your card details
+        Continue -->
+  </div>
+  
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

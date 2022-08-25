@@ -1,0 +1,188 @@
+:root {
+    --bg-color: hsl(0, 0%, 95%);
+
+    --font-family: 'Space Grotesk', sans-serif;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    overflow: hidden;
+}
+
+.bg-img {
+    background-image: url('../images/bg-main-mobile.png');
+    background-position: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 240px;
+}
+
+.back-img {
+    background-image: url('../images/bg-card-back.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 286px;
+    height: 157px;
+    left: 73px;
+    top: 32px;
+}
+
+.cvv-text {
+    font-weight: normal;
+    font-size: 9px;
+    position: absolute;
+    right: 12.5%;
+    top: calc(50% - 11px/2 - 0.46px);
+
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: right;
+    letter-spacing: 1.28571px;
+}
+
+.front-img {
+    background-image: url('../images/bg-card-front.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 286px;
+    height: 157px;
+    left: 20px;
+    top: 120px;
+}
+
+.card-logo {
+    background-image: url('../images/card-logo.svg');
+    width:100px;
+    height: 50px;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 6.99%;
+    right: 82.45%;
+    top: 11.46%;
+    bottom: 69.43%; 
+}
+
+.primary-text {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 2.2px;
+    color: #FFFFFF;  
+
+    position: absolute;
+    height: 23px;
+    left: 6.99%;
+    right: 9.44%;
+    top: calc(50% - 23px/2 + 18px);
+}
+
+.secondary-name {
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1.28571px;
+    color: #FFFFFF;
+
+    position: absolute;
+    height: 11px;
+    left: 6.99%;
+    top: 80%;
+}
+
+.secondary-numb {
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1.28571px;
+    color: #FFFFFF;
+
+    position: absolute;
+    height: 11px;
+    right: 10%;
+    top: 80%;
+}
+
+.container__form-half {
+    position: absolute;
+    width: 327px;
+    height: 328px;
+    left: 24px;
+    top: 331px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    display: flex;
+}
+
+input {
+    width: 327px;
+    height: 45px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    padding: 11px 16px;
+    border-radius: 5px;
+}
+
+label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: #21092F;
+    margin: 9px 0px;
+}
+
+button {
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 10px;
+    color: #fff;
+    width: 327px;
+    height: 53px;
+    border: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 28px;
+}
+
+.sm-input {
+    border-radius: 5px;
+    width: 72px;
+}
+
+.med-input {
+    border-radius: 5px;
+    width: 164px;
+
+}
+
+.label {
+    gap: 10px;
+}
